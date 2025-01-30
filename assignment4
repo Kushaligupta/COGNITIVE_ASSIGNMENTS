@@ -1,0 +1,70 @@
+#Q1 a   
+import numpy as np
+arr = np.array([1,2,3,4,5])
+print(arr)
+add2 = arr + 2
+print(add2)
+
+#Q1 b
+multiply3 = arr * 3
+print(multiply3)
+
+#Q1 c
+divide2 = arr / 2
+print(divide2)
+
+#Q2 a
+arr=np.array([1,2,3,6,4,5])
+reversed_arr=arr[::-1]
+print(reversed_arr)
+
+#Q2 b
+x = np.array([1,2,3,4,5,1,2,1,1,1])
+y = np.array([1,1,1,2,3,4,2,4,3,3])
+
+mostfrequentx = np.bincount(x).argmax()
+print(mostfrequentx)
+indicesx = np.where(x == mostfrequentx)
+print(indicesx)
+mostfrequenty = np.bincount(y).argmax()
+print(mostfrequenty)
+indicesy = np.where(y == mostfrequenty) 
+print(indicesy)
+
+#Q3 
+arr = np.array([[10,20,30],[40,50,60],[70,80,90]])
+elem12 = arr[0,1]
+elem31 = arr[2,0]
+print(elem12,elem31)
+
+#Q4
+Kushali= np.linspace(10,100,25)
+print(Kushali)
+print(Kushali.ndim)
+print(Kushali.shape)
+print(Kushali.size)
+print(Kushali.dtype)
+print(Kushali.nbytes)
+
+transpose = Kushali.reshape(5,5)
+print(transpose)
+print(Kushali.T)
+
+#Q5
+ucs420_Kushali= np.array([[10,20,30,40],[50,60,70,80],[90,15,20,35]])
+mean=np.mean(ucs420_Kushali)
+median=np.median(ucs420_Kushali)
+maxvalue=np.max(ucs420_Kushali)
+minvalue=np.min(ucs420_Kushali)
+uniqueelement=np.unique(ucs420_Kushali)
+
+print(mean)
+print(median)
+print(maxvalue)
+print(minvalue)
+print(uniqueelement)
+
+reshaped_ucs420_Kushali=ucs420_Kushali.reshape(4,3)
+print(reshaped_ucs420_Kushali)
+resized_ucs420_Kushali=np.resize(ucs420_Kushali,(2,3))
+print(resized_ucs420_Kushali)
